@@ -1,0 +1,11 @@
+Suppose we have two devices: H1 and H2. Roscore will only need to be run on H1. 
+Connect from H1 to H2 via ssh. In ssh execute "source ~/.bashrc" to export environment variables so as to enable interactive shell.
+On H1 and H2 separately export ROS_IP=own_ip_address
+On H1 and H2 separately export ROS_MASTER_URI=http://h1_ip_addr:11311
+Launch roscore on H1
+On H1 and H2 separately launch ROS nodes.
+
+Reference:
+http://wiki.ros.org/ROS/Tutorials/MultipleMachines
+http://wiki.ros.org/ROS/NetworkSetup
+http://wiki.ros.org/ROS/Troubleshooting
